@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 
 
@@ -1110,3 +1111,6 @@
   </body>
 </html>
 
+=======
+# FullStackWebandMultiplatformMobileAppDev-Course3_MobileAppDev_IonicandCordova
+>>>>>>> a3143c523359ef989aad1552290590c8f2c9cc9a
