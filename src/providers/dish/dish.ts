@@ -22,17 +22,16 @@ export class DishProvider {
   }
 
   getDishes(): Observable<Dish[]> {
-    return this.http.get<Dish[]>({baseURL} + 'dishes');
+    return this.http.get<Dish[]>(baseURL + 'dishes');
   }
 
   getDish(id: number): Observable<Dish> {
-    return  this.http.get<Dish>({baseURL} + 'dishes/'+ id)
-            .map(res => res[0]);
+    return  this.http.get<Dish>(baseURL + 'dishes/'+ id);
   }
 
   getFeaturedDish(): Observable<Dish> {
     return this.http.get<Dish>(baseURL + 'dishes?featured=true')
-            .map(res => res[0]);
+            .map(dish => dish[0]);
   }
 
 }

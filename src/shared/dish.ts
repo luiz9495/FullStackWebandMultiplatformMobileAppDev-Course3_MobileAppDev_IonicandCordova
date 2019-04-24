@@ -1,4 +1,4 @@
-import { Comment } from './comments';
+import { Comment } from './comment';
 
 export interface Dish {
   id: number;
