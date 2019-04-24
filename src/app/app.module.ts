@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { HttpModule } from '@angular/http';
+//import { HttpModule } from '@angular/http';
 import { HttpClientModule } from '@angular/common/http';
 import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
@@ -30,7 +30,7 @@ import { baseURL } from '../shared/baseurl';
   ],
   imports: [
     BrowserModule,
-    HttpModule,
+//    HttpModule,
     HttpClientModule,
     IonicModule.forRoot(MyApp),
   ],

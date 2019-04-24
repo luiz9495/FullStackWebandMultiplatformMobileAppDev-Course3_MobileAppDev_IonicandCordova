@@ -26,8 +26,7 @@ export class LeaderProvider {
   }
 
   getLeader(id: number): Observable<Leader> {
-    return  this.http.get<Leader>(baseURL + 'leaders/'+ id)
-      .map(res => res[0]);
+    return  this.http.get<Leader>(baseURL + 'leaders/'+ id);
   }
 
   getFeaturedLeader(): Observable<Leader> {

@@ -27,8 +27,7 @@ export class PromotionProvider {
   }
 
   getPromotion(id: number): Observable<Promotion> {
-    return  this.http.get<Promotion>(baseURL + 'promotions/'+ id)
-            .map(res => res[0]);
+    return  this.http.get<Promotion>(baseURL + 'promotions/'+ id);
   }
 
   getFeaturedPromotion(): Observable<Promotion> {
