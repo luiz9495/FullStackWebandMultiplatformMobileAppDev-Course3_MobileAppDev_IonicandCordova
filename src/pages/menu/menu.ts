@@ -28,6 +28,7 @@ export class MenuPage implements OnInit {
       .subscribe(dishes => this.dishes = dishes,
         errmess => this.errMess = <any>errmess);
   }
+  
   ionViewDidLoad() {
     console.log('ionViewDidLoad MenuPage');
   }
