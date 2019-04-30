@@ -47,6 +47,7 @@ export class MyApp {
       // Here you can do any higher level native things you might need.
       this.statusBar.styleDefault();
       this.splashScreen.hide();
+
       this.network.onDisconnect().subscribe(() => {
         if (!this.loading) {
           this.loading = this.loadingCtrl.create({
@@ -55,6 +56,7 @@ export class MyApp {
           this.loading.present();
         }
       });
+
       this.network.onConnect().subscribe(() => {
 
         // We just got a connection but we need to wait briefly
@@ -70,6 +72,7 @@ export class MyApp {
           this.loading = null;
         }
       });
+
     });
   }
 
