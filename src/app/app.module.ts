@@ -25,6 +25,7 @@ import { PromotionProvider } from '../providers/promotion/promotion';
 //import { ProcessHttpmsgProvider } from '../providers/process-httpmsg/process-httpmsg';
 import { baseURL } from '../shared/baseurl';
 import { FavoriteProvider } from '../providers/favorite/favorite';
+import { EmailComposer } from '@ionic-native/email-composer';
 
 @NgModule({
   declarations: [
@@ -68,7 +69,8 @@ import { FavoriteProvider } from '../providers/favorite/favorite';
     PromotionProvider,
 //    ProcessHttpmsgProvider,
     { provide: 'BaseURL', useValue: baseURL },
-    FavoriteProvider
+    FavoriteProvider,
+    EmailComposer
   ]
 })
 export class AppModule {}
