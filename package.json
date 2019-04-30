@@ -20,6 +20,7 @@
     "@angular/http": "5.2.11",
     "@angular/platform-browser": "5.2.11",
     "@angular/platform-browser-dynamic": "5.2.11",
+    "@ionic-native/camera": "^4.15.0",
     "@ionic-native/core": "~4.20.0",
     "@ionic-native/email-composer": "^4.15.0",
     "@ionic-native/local-notifications": "^4.15.0",
@@ -59,7 +60,8 @@
       "cordova-plugin-email": {},
       "cordova-plugin-x-socialsharing": {
         "ANDROID_SUPPORT_V4_VERSION": "24.1.1+"
-      }
+      },
+      "cordova-plugin-camera": {}
     },
     "platforms": [
       "android"
