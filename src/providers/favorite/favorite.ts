@@ -37,7 +37,6 @@ export class FavoriteProvider {
     if (!this.isFavorite(id)) {
       this.favorites.push(id);
       this.storage.set('favorites', this.favorites);
-
       // Schedule a single notification
       this.localNotifications.schedule({
         id: id,
