@@ -29,6 +29,7 @@ import { FavoriteProvider } from '../providers/favorite/favorite';
 import { EmailComposer } from '@ionic-native/email-composer';
 import { SocialSharing } from '@ionic-native/social-sharing';
 import { Camera } from '@ionic-native/camera';
+import { Network } from '@ionic-native/network';
 
 @NgModule({
   declarations: [
@@ -77,7 +78,8 @@ import { Camera } from '@ionic-native/camera';
     FavoriteProvider,
     EmailComposer,
     SocialSharing,
-    Camera
+    Camera,
+    Network
   ]
 })
 export class AppModule {}
