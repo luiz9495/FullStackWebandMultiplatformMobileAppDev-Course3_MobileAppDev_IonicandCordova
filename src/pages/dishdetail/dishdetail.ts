@@ -46,12 +46,15 @@ export class DishdetailPage {
   }
 
   addToFavorites() {
-    console.log('Adding to Favorites', this.dish.id);
-    this.favorite = this.favoriteservice.addFavorite(this.dish.id);
-    this.toastCtrl.create({
-      message: 'Dish ' + this.dish.id + ' added as a favorite successfully',
-      duration: 3000
-    }).present();
+    if (!this.favorite) {
+      console.log('Adding to Favorites', this.dish.id);
+
+      this.favorite = this.favoriteservice.addFavorite(this.dish.id);
+      this.toastCtrl.create({
+        message: 'Dish ' + this.dish.id + ' added as a favorite successfully',
+        duration: 3000
+      }).present();
+    }
   }
 
   openComment() {
